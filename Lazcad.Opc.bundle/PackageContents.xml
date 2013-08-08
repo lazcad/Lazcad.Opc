@@ -14,6 +14,7 @@
 		  <Command Local="opcselect" Global="opcselect" />
 		  <Command Local="opcclear" Global="opcclear" />
 		</Commands>
-	</ComponentEntry>    
+	</ComponentEntry>  
+<ComponentEntry AppName="Lazcad.Opc" Version="0.3" ModuleName="./Contents/Resources/lazcadopc.cuix"  AppDescription="Alternative OPC Connector" />	
   </Components>
 </ApplicationPackage>
