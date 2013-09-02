@@ -2,19 +2,19 @@
 <ApplicationPackage SchemaVersion="1.0"
                     ProductType="Application"
                     Name="Lazcad.Opc"
-                    AppVersion="0.3"
+                    AppVersion="0.4"
                     Description="Lazcad Opc"
                     Author="Lazcad"
                     Icon="./Contents/Resources/lazcadopc.bmp" >
   <CompanyDetails Name="Lazcad" Url="http://www.lazcad.com" Email="admin@lazcad.com" />
   <Components>
     <RuntimeRequirements OS="Win32|Win64" Platform="PNID|PLANT3D" SeriesMin="R19.1" SeriesMax="R19.1"/>
-    <ComponentEntry AppName="Lazcad.Opc" ModuleName="./Contents/2014/lazcad.opc.dll" AppDescription="Lazcad Opc" LoadOnAutoCADStartup="false" LoadOnCommandInvocation="True">
+    <ComponentEntry AppName="Lazcad.Opc" ModuleName="./Contents/2014/lazcad.opc.dll" AppDescription="Lazcad Opc" LoadOnAutoCADStartup="true" LoadOnCommandInvocation="false">
 		<Commands GroupName="LAZ_OPC">
 		  <Command Local="opcselect" Global="opcselect" />
 		  <Command Local="opcclear" Global="opcclear" />
 		</Commands>
 	</ComponentEntry>  
-<ComponentEntry AppName="Lazcad.Opc" Version="0.3" ModuleName="./Contents/Resources/lazcadopc.cuix"  AppDescription="Alternative OPC Connector" />	
+<ComponentEntry AppName="Lazcad.Opc" Version="0.4" ModuleName="./Contents/Resources/lazcadopc.cuix"  AppDescription="Alternative OPC Connector" />	
   </Components>
 </ApplicationPackage>

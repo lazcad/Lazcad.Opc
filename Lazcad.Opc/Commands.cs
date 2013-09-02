@@ -2,6 +2,7 @@
 using Autodesk.AutoCAD.DatabaseServices;
 using Autodesk.AutoCAD.EditorInput;
 using Autodesk.AutoCAD.Runtime;
+using Autodesk.ProcessPower.PlantInstance;
 using Autodesk.ProcessPower.PnIDObjects;
 
 namespace Lazcad.Opc
@@ -16,7 +17,7 @@ namespace Lazcad.Opc
             var doc = Application.DocumentManager.MdiActiveDocument;
             var db = doc.Database;
             var ed = doc.Editor;
-                        
+
             ObjectId opcId;
 
             var sel = ed.SelectImplied();
