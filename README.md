@@ -1,7 +1,7 @@
 Lazcad.Opc
 ==========
 
-This is a quick fix for Off Page Connector in AutoCAD P&ID 2014 (Free BSD License)
+This is a quick fix for Off Page Connector in AutoCAD P&ID 2014 and 2015 (Free BSD License)
 
 To use this
 
