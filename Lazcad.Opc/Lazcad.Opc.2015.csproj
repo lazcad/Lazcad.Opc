@@ -4,58 +4,61 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0AAB475C-94F0-4AF8-907C-1F2BE1B97700}</ProjectGuid>
+    <ProjectGuid>{582CEE29-23D6-43B9-8054-84646DC62505}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Lazcad.Opc</RootNamespace>
     <AssemblyName>Lazcad.Opc</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\..\..\..\..\ProgramData\Autodesk\ApplicationPlugins\Lazcad.Opc.bundle\Contents\2014\</OutputPath>
+    <OutputPath>..\..\..\..\..\..\..\ProgramData\Autodesk\ApplicationPlugins\Lazcad.Opc.bundle\Contents\Win2015\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
+    <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\Lazcad.Opc.bundle\Contents\Win2015\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="accoremgd">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\AutoCAD 2014\accoremgd.dll</HintPath>
+      <HintPath>..\..\Common\lib\ObjectARX2015\accoremgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="acdbmgd">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\AutoCAD 2014\acdbmgd.dll</HintPath>
+      <HintPath>..\..\Common\lib\ObjectARX2015\acdbmgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="acmgd">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\AutoCAD 2014\acmgd.dll</HintPath>
+      <HintPath>..\..\Common\lib\ObjectARX2015\acmgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="PnIDmgd">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\AutoCAD 2014\PLNT3D\PnIDmgd.dll</HintPath>
+      <HintPath>..\..\Common\lib\PlantSDK2015\PnIDmgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="PnPDataLinks">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\AutoCAD 2014\PnPDataLinks.dll</HintPath>
+      <HintPath>..\..\Common\lib\PlantSDK2015\PnPDataLinks.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="PnPDataObjects">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\AutoCAD 2014\PnPDataObjects.dll</HintPath>
+      <HintPath>..\..\Common\lib\PlantSDK2015\PnPDataObjects.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="PnPProjectManagerMgd">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\AutoCAD 2014\PLNT3D\PnPProjectManagerMgd.DLL</HintPath>
+      <HintPath>..\..\Common\lib\PlantSDK2015\PnPProjectManagerMgd.DLL</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -74,7 +77,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy /Y "$(TargetDir)$(ProjectName).dll" "$(SolutionDir)Lazcad.Opc.bundle\Contents\2014\$(ProjectName).dll"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

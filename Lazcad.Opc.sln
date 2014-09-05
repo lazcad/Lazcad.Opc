@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lazcad.Opc", "Lazcad.Opc\Lazcad.Opc.csproj", "{0AAB475C-94F0-4AF8-907C-1F2BE1B97700}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lazcad.Opc.2014", "Lazcad.Opc\Lazcad.Opc.2014.csproj", "{0AAB475C-94F0-4AF8-907C-1F2BE1B97700}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lazcad.Opc.2015", "Lazcad.Opc\Lazcad.Opc.2015.csproj", "{582CEE29-23D6-43B9-8054-84646DC62505}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +17,10 @@ Global
 		{0AAB475C-94F0-4AF8-907C-1F2BE1B97700}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AAB475C-94F0-4AF8-907C-1F2BE1B97700}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AAB475C-94F0-4AF8-907C-1F2BE1B97700}.Release|Any CPU.Build.0 = Release|Any CPU
+		{582CEE29-23D6-43B9-8054-84646DC62505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{582CEE29-23D6-43B9-8054-84646DC62505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{582CEE29-23D6-43B9-8054-84646DC62505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{582CEE29-23D6-43B9-8054-84646DC62505}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
